@@ -1,0 +1,7 @@
+import random
+a= "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+long=int (input ("jak długie ma być hasło"))
+hasło = ""
+for i in range(long):
+  hasło+= a [ random.randint(0,len(a))]                                 
+  print (hasło)          
