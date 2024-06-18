@@ -16,13 +16,13 @@ async def on_ready():
 @bot.command()
 async def hello(ctx):
     await ctx.send('Cześć!')
-
 @bot.command()
 async def bye(ctx):
-    await ctx.send("\\U0001f642")
+    await ctx.send('\\U0001f642')
+
 @bot.command()
-async def haslo(ctx,lenght):
-    await ctx.send (main.gen_pass(lenght))
+async def generate_password(ctx, length = 8):
+    await ctx.send(main.gen_pass(length))
 @bot.command()
 async def memes(ctx):
     nazwy- os.listdir("memes")
@@ -36,3 +36,4 @@ async def memes(ctx):
 async def pomoc(ctx):
     await ctx.send ("możesz zacząć oszczędzać wodę","zbieraj śmieci w parkach lub rzekach w wolnym czasie","segreguj śmieci","oszczędzaj energie i wode","nie śmieć")
     random.choice (pomoc)
+bot.run("MTI0NTA1OTgxNTUwMDQxOTA5Mg.GzXIX_.7zEl2NkBdHHATKBx5Jj_Ar_ou7ObmCaSxPTttQ")
